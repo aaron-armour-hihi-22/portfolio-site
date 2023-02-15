@@ -7,4 +7,24 @@ body {
   font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+div.banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 6vh;
+  min-height: 36px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: lightgrey;
+}
 
+.banner h2 {
+  margin-left: 2vw;
+}
+
+.banner button {
+  margin-right: 2vw;
+  height: 24px;
+}
