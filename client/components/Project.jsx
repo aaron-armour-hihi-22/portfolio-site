@@ -8,8 +8,14 @@ function Project() {
 
   return (
     <>
-      <h2>{projData.name}</h2>
-      {projData.content}
+      {projData === undefined ? (
+        <h2>Error: {id} is not a known project id</h2>
+      ) : (
+        <>
+          <h2>{projData.name}</h2>
+          {projData.content}
+        </>
+      )}
       <Link to="/">Home</Link>
     </>
   )
