@@ -1,7 +1,10 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import ProjectCard from './ProjectCard'
+import projects from '../projectData'
 
 function Home() {
+  const projectIds = Object.keys(projects)
+
   return (
     <>
       <h2>This is the Home component</h2>
@@ -10,17 +13,14 @@ function Home() {
         alt="a cute puppy"
         style={{ height: '200px' }}
       />
-      <ul>
-        <li>
-          <Link to="project/1">Project 1</Link>
-        </li>
-        <li>
-          <Link to="project/2">Project 2</Link>
-        </li>
-        <li>
-          <Link to="project/123">Project 123</Link>
-        </li>
-      </ul>
+      <h2>Projects</h2>
+      {projectIds.map((projectId) => (
+        <ProjectCard
+          projectId={projectId}
+          projectData={projects[projectId]}
+          key={projectId}
+        />
+      ))}
     </>
   )
 }
