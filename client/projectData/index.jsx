@@ -3,6 +3,14 @@ import React from 'react'
 const projects = {
   1: {
     name: 'First project',
+    image: '/assets/Cute-Puppy.jpg',
+    altText: 'a cute puppy',
+    summary:
+      'This was a great first project. But you really need to know more about it, \
+      so let me tell you. This project flowed so smoothly, it was as if I had been \
+      a developer for years...',
+    deployed: 'https://aarons-sudoku.netlify.app/',
+    github: 'https://github.com/aaron-armour-hihi-22/sudoku',
     content: (
       <>
         <p>
@@ -21,6 +29,9 @@ const projects = {
   },
   2: {
     name: 'Second project',
+    image: '/assets/Cute-Puppy.jpg',
+    altText: 'a cute puppy',
+    summary: 'This was a great second project',
     content: (
       <>
         <p>
@@ -39,6 +50,9 @@ const projects = {
   },
   123: {
     name: 'Another project',
+    image: '/assets/Cute-Puppy.jpg',
+    altText: 'a cute puppy',
+    summary: 'This was a great additional project',
     content: (
       <>
         <p>
