@@ -75,15 +75,15 @@
     "webpack-cli": "^4.9.2"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
     "@fontsource/roboto": "^4.5.8",
     "@mui/icons-material": "^5.11.9",
     "@mui/material": "^5.11.9",
-    "@mui/styled-engine-sc": "^5.11.9",
     "express": "^4.17.2",
     "knex": "^2.3.0",
     "pg": "^8.8.0",
     "sqlite3": "^5.1.2",
-    "styled-components": "^5.3.6",
     "superagent": "7.1.1"
   },
   "prettier": {
