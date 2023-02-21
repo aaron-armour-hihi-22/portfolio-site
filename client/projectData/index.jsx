@@ -32,6 +32,7 @@ const projects = {
     image: '/assets/Cute-Puppy.jpg',
     altText: 'a cute puppy',
     summary: 'This was a great second project',
+    deployed: 'https://aarons-sudoku.netlify.app/',
     content: (
       <>
         <p>
@@ -53,6 +54,7 @@ const projects = {
     image: '/assets/Cute-Puppy.jpg',
     altText: 'a cute puppy',
     summary: 'This was a great additional project',
+    github: 'https://github.com/aaron-armour-hihi-22/sudoku',
     content: (
       <>
         <p>
