@@ -5,10 +5,11 @@ import CardHeader from '@mui/material/CardHeader'
 import CardActionArea from '@mui/material/CardActionArea'
 import CardMedia from '@mui/material/CardMedia'
 import { CardContent, Typography } from '@mui/material'
+import Launch from '@mui/icons-material/Launch'
 
 function ProjectCard({ projectId, projectData }) {
   return (
-    <Card sx={{ width: '400px', padding: '5px' }}>
+    <Card sx={{ width: '400px', padding: '5px', marginBottom: '10px' }}>
       <CardActionArea component={Link} to={'project/' + projectId}>
         <CardHeader title={projectData.name} />
         <CardMedia
@@ -20,23 +21,22 @@ function ProjectCard({ projectId, projectData }) {
           <Typography variant="body1">{projectData.summary}</Typography>
         </CardContent>
       </CardActionArea>
-      {projectData.deployed && (
-        <Typography>
+      <div className="link-logos">
+        {projectData.deployed && (
           <a href={projectData.deployed} target="_blank" rel="noreferrer">
-            live deployed
+            <Launch fontSize="large" />
           </a>
-        </Typography>
-      )}
-      {projectData.github && (
-        <Typography>
+        )}
+        {projectData.github && (
           <a href={projectData.github} target="_blank" rel="noreferrer">
-            GitHub
+            <img
+              src="/assets/github-mark.png"
+              alt="github invertocat logo"
+              className="github-logo"
+            />
           </a>
-        </Typography>
-      )}
-      {/* <a href="https://google.com" target={'_blank'} rel="noreferrer">
-        Google
-      </a> */}
+        )}
+      </div>
     </Card>
   )
 }
