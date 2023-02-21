@@ -14,13 +14,15 @@ function Home() {
         style={{ height: '200px' }}
       />
       <h2>Projects</h2>
-      {projectIds.map((projectId) => (
-        <ProjectCard
-          projectId={projectId}
-          projectData={projects[projectId]}
-          key={projectId}
-        />
-      ))}
+      <div className="project-cards">
+        {projectIds.map((projectId) => (
+          <ProjectCard
+            projectId={projectId}
+            projectData={projects[projectId]}
+            key={projectId}
+          />
+        ))}
+      </div>
     </>
   )
 }
