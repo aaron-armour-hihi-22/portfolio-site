@@ -33,3 +33,21 @@ div.banner {
 .main {
   margin-top: 4vh;
 }
+
+.project-cards {
+  display: flex;
+  width: 95vw;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.link-logos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.github-logo {
+  height: 40px;
+}
