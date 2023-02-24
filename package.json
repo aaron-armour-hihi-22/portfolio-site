@@ -83,6 +83,7 @@
     "express": "^4.17.2",
     "knex": "^2.3.0",
     "pg": "^8.8.0",
+    "react-router-hash-link": "^2.4.3",
     "sqlite3": "^5.1.2",
     "superagent": "7.1.1"
   },
