@@ -30,6 +30,14 @@ div.banner {
   height: 24px;
 }
 
+.anchor::before {
+  display: block;
+  content: " ";
+  margin-top: -54px;
+  height: 54px;
+  visibility: hidden;
+}
+
 .main {
   margin-top: 4vh;
 }
