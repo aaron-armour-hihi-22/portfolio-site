@@ -1,9 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
+
 body {
   position: absolute;
   top: 0;
   left: 0;
   margin: 0;
   padding: 20px;
+  background-color: #03071D;
+  color: whitesmoke;
   font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -19,6 +23,7 @@ div.banner {
   justify-content: space-between;
   align-items: center;
   background-color: lightgrey;
+  color: gray;
 }
 
 .banner h2 {
