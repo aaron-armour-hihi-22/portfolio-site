@@ -24,13 +24,13 @@ function ProjectCard({ projectId, projectData }) {
       <div className="link-logos">
         {projectData.deployed && (
           <a href={projectData.deployed} target="_blank" rel="noreferrer">
-            <Launch fontSize="large" />
+            <Launch fontSize="large" sx={{ color: 'white' }} />
           </a>
         )}
         {projectData.github && (
           <a href={projectData.github} target="_blank" rel="noreferrer">
             <img
-              src="/assets/github-mark.png"
+              src="/assets/github-mark-white.png"
               alt="github invertocat logo"
               className="github-logo"
             />
