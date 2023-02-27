@@ -1,4 +1,5 @@
 import React from 'react'
+import { Typography } from '@mui/material'
 import ProjectCard from './ProjectCard'
 import projects from '../projectData'
 
@@ -7,27 +8,27 @@ function Home() {
 
   return (
     <>
-      <h2 id="about" className="anchor">
+      <Typography variant="h4" id="about" className="anchor">
         About me
-      </h2>
+      </Typography>
       <img
         src="/assets/Cute-Puppy.jpg"
         alt="a cute puppy"
         style={{ height: '200px' }}
       />
-      <p>
+      <Typography>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
         distinctio eligendi quaerat, eveniet qui tempore, tempora reprehenderit
         blanditiis fuga, officia doloribus nostrum laudantium ad animi
         accusantium assumenda commodi. Temporibus, necessitatibus.
-      </p>
-      <h2 id="skills" className="anchor">
+      </Typography>
+      <Typography variant="h4" id="skills" className="anchor">
         Skills
-      </h2>
-      <p>Skills to go here.</p>
-      <h2 id="projects" className="anchor">
+      </Typography>
+      <Typography>Skills to go here.</Typography>
+      <Typography variant="h4" id="projects" className="anchor">
         Projects
-      </h2>
+      </Typography>
       <div className="project-cards">
         {projectIds.map((projectId) => (
           <ProjectCard
@@ -37,10 +38,10 @@ function Home() {
           />
         ))}
       </div>
-      <h2 id="contact" className="anchor">
+      <Typography variant="h4" id="contact" className="anchor">
         Contact
-      </h2>
-      <p>A contact form most probably...</p>
+      </Typography>
+      <Typography>A contact form most probably...</Typography>
     </>
   )
 }

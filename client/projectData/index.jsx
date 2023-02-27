@@ -1,4 +1,5 @@
 import React from 'react'
+import { Typography } from '@mui/material'
 
 const projects = {
   1: {
@@ -13,17 +14,17 @@ const projects = {
     github: 'https://github.com/aaron-armour-hihi-22/sudoku',
     content: (
       <>
-        <p>
+        <Typography>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto dicta,
           aspernatur nesciunt fugit fuga consequatur eos repellat nostrum
           mollitia unde explicabo pariatur vitae quis, laborum sint doloremque
           eveniet officiis saepe.
-        </p>
-        <p>
+        </Typography>
+        <Typography>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed vel dicta
           eligendi sint officiis. Modi soluta, obcaecati minus eos ratione
           libero eveniet quibusdam alias suscipit hic nisi asperiores id. Iusto.
-        </p>
+        </Typography>
       </>
     ),
   },
@@ -35,17 +36,17 @@ const projects = {
     deployed: 'https://aarons-sudoku.netlify.app/',
     content: (
       <>
-        <p>
+        <Typography>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto dicta,
           aspernatur nesciunt fugit fuga consequatur eos repellat nostrum
           mollitia unde explicabo pariatur vitae quis, laborum sint doloremque
           eveniet officiis saepe.
-        </p>
-        <p>
+        </Typography>
+        <Typography>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed vel dicta
           eligendi sint officiis. Modi soluta, obcaecati minus eos ratione
           libero eveniet quibusdam alias suscipit hic nisi asperiores id. Iusto.
-        </p>
+        </Typography>
       </>
     ),
   },
@@ -57,17 +58,17 @@ const projects = {
     github: 'https://github.com/aaron-armour-hihi-22/sudoku',
     content: (
       <>
-        <p>
+        <Typography>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto dicta,
           aspernatur nesciunt fugit fuga consequatur eos repellat nostrum
           mollitia unde explicabo pariatur vitae quis, laborum sint doloremque
           eveniet officiis saepe.
-        </p>
-        <p>
+        </Typography>
+        <Typography>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed vel dicta
           eligendi sint officiis. Modi soluta, obcaecati minus eos ratione
           libero eveniet quibusdam alias suscipit hic nisi asperiores id. Iusto.
-        </p>
+        </Typography>
       </>
     ),
   },
