@@ -1,11 +1,11 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
-import { createTheme, ThemeProvider } from '@mui/material'
+import { createTheme, ThemeProvider, responsiveFontSizes } from '@mui/material'
 import Banner from './Banner'
 import Home from './Home'
 import Project from './Project'
 
-const theme = createTheme({
+let theme = createTheme({
   palette: {
     contrastThreshold: 4.5,
     background: {
@@ -19,6 +19,8 @@ const theme = createTheme({
     fontFamily: 'Gruppo, Verdana',
   },
 })
+
+theme = responsiveFontSizes(theme)
 
 function App() {
   return (
