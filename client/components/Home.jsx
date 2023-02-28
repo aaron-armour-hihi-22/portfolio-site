@@ -8,7 +8,7 @@ function Home() {
 
   return (
     <>
-      <Typography variant="h4" id="about" className="anchor">
+      <Typography variant="h3" id="about" className="anchor">
         About me
       </Typography>
       <img
@@ -22,11 +22,11 @@ function Home() {
         blanditiis fuga, officia doloribus nostrum laudantium ad animi
         accusantium assumenda commodi. Temporibus, necessitatibus.
       </Typography>
-      <Typography variant="h4" id="skills" className="anchor">
+      <Typography variant="h3" id="skills" className="anchor">
         Skills
       </Typography>
       <Typography>Skills to go here.</Typography>
-      <Typography variant="h4" id="projects" className="anchor">
+      <Typography variant="h3" id="projects" className="anchor">
         Projects
       </Typography>
       <div className="project-cards">
@@ -38,7 +38,7 @@ function Home() {
           />
         ))}
       </div>
-      <Typography variant="h4" id="contact" className="anchor">
+      <Typography variant="h3" id="contact" className="anchor">
         Contact
       </Typography>
       <Typography>A contact form most probably...</Typography>
