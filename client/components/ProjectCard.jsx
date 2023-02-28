@@ -9,7 +9,7 @@ import Launch from '@mui/icons-material/Launch'
 
 function ProjectCard({ projectId, projectData }) {
   return (
-    <Card sx={{ width: '400px', padding: '5px', marginBottom: '10px' }}>
+    <Card sx={{ width: '320px', padding: '5px', marginBottom: '10px' }}>
       <CardActionArea component={Link} to={'project/' + projectId}>
         <CardHeader title={projectData.name} />
         <CardMedia
