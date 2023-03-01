@@ -3,6 +3,8 @@ import { HashLink as Link } from 'react-router-hash-link'
 import Box from '@mui/material/Box'
 import List from '@mui/material/List'
 import ListItem from '@mui/material/ListItem'
+import IconButton from '@mui/material/IconButton'
+import CloseIcon from '@mui/icons-material/Close'
 import ListItemText from '@mui/material/ListItemText'
 
 function Menu({ setDrawerIsOpen }) {
@@ -20,6 +22,16 @@ function Menu({ setDrawerIsOpen }) {
   return (
     <Box sx={{ width: 250 }} role="presentation">
       <List>
+        <React.Fragment key="close">
+          <ListItem>
+            <IconButton
+              onClick={() => setDrawerIsOpen(false)}
+              sx={{ color: 'whitesmoke', margin: 'auto' }}
+            >
+              <CloseIcon />
+            </IconButton>
+          </ListItem>
+        </React.Fragment>
         {menuItems.map(([text, marginLeft, loc]) => {
           if (loc !== undefined) {
             return (
