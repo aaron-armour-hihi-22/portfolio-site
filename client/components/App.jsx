@@ -1,7 +1,7 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import { createTheme, ThemeProvider, responsiveFontSizes } from '@mui/material'
-import Banner from './Banner'
+import MenuButton from './MenuButton'
 import Home from './Home'
 import Project from './Project'
 
@@ -26,10 +26,9 @@ function App() {
   return (
     <>
       <ThemeProvider theme={theme}>
-        <header className="header">
-          <Banner />
-        </header>
+        <header className="header"></header>
         <section className="main">
+          <MenuButton />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="project/:id" element={<Project />} />
