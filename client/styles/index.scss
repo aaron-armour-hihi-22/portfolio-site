@@ -5,60 +5,30 @@ body {
   top: 0;
   left: 0;
   margin: 0;
-  padding: 20px;
+  padding: min(3vw, 16px);
+  max-width: 94vw;
   background-color: #03071D;
   color: whitesmoke;
   font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-div.banner {
+div.menu-button {
   position: fixed;
   z-index: 2;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 6vh;
-  min-height: 36px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: lightgrey;
-  color: gray;
-}
-
-.banner h2 {
-  margin-left: 2vw;
-}
-
-.banner button {
-  margin-right: 2vw;
-  height: 24px;
-}
-
-.anchor::before {
-  display: block;
-  content: " ";
-  margin-top: -54px;
-  height: 54px;
-  visibility: hidden;
-}
-
-.main {
-  margin-top: 4vh;
-
+  right: 5vw;
 }
 
 @media only screen and (min-width: 1024px) {
   .main {
-    margin-left: 5vw;
-    margin-right: 5vw;
+    margin-left: 4vw;
+    margin-right: 4vw;
   }
 }
 
 @media only screen and (min-width: 1366px) {
   .main {
-    margin-left: 8vw;
-    margin-right: 8vw;
+    margin-left: 6vw;
+    margin-right: 6vw;
   }
 }
 
