@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link, useParams } from 'react-router-dom'
+import { Typography } from '@mui/material'
 import projects from '../projectData'
 
 function Project() {
@@ -9,14 +10,18 @@ function Project() {
   return (
     <>
       {projData === undefined ? (
-        <h2>Error: {id} is not a known project id</h2>
+        <Typography variant="h2">
+          Error: {id} is not a known project id
+        </Typography>
       ) : (
         <>
-          <h2>{projData.name}</h2>
+          <Typography variant="h2">{projData.name}</Typography>
           {projData.content}
         </>
       )}
-      <Link to="/">Home</Link>
+      <Link to="/">
+        <Typography>Home</Typography>
+      </Link>
     </>
   )
 }
