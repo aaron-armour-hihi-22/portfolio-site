@@ -8,6 +8,12 @@ function Home() {
 
   return (
     <>
+      <Typography variant="h2" className="title">
+        Aaron Armour - Dev Portfolio
+      </Typography>
+      <Typography variant="h5" className="tagline">
+        Full Stack Developer
+      </Typography>
       <Typography variant="h3" id="about" className="anchor">
         About me
       </Typography>
