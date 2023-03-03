@@ -50,6 +50,16 @@ div.menu-button {
   align-items: center;
 }
 
+.MuiCardMedia-img {
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  .MuiCardMedia-img {
+    transform: scale(1.05);
+  }
+}
+
 .link-logos {
   display: flex;
   justify-content: space-around;
