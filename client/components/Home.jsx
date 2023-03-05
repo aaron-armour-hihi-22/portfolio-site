@@ -2,6 +2,7 @@ import React from 'react'
 import { Typography } from '@mui/material'
 import ProjectCard from './ProjectCard'
 import projects from '../projectData'
+import ContactForm from './ContactForm'
 
 function Home() {
   const projectIds = Object.keys(projects)
@@ -47,7 +48,7 @@ function Home() {
       <Typography variant="h3" id="contact" className="anchor">
         Contact
       </Typography>
-      <Typography>A contact form most probably...</Typography>
+      <ContactForm />
     </>
   )
 }
