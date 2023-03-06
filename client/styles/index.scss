@@ -66,6 +66,10 @@ div.menu-button {
   align-items: center;
 }
 
-.github-logo {
-  height: 40px;
+.contact-logos {
+  margin-left: max(2vw, 12px);
+}
+
+.github-logo, .linked-in-logo {
+  height: 30px;
 }
