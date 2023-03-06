@@ -19,9 +19,9 @@ function Home() {
         About me
       </Typography>
       <img
-        src="/assets/Cute-Puppy.jpg"
-        alt="a cute puppy"
-        style={{ height: '200px' }}
+        src="/assets/me.jpg"
+        alt="Aaron"
+        style={{ height: '150px', borderRadius: '50%' }}
       />
       <Typography>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
@@ -29,6 +29,28 @@ function Home() {
         blanditiis fuga, officia doloribus nostrum laudantium ad animi
         accusantium assumenda commodi. Temporibus, necessitatibus.
       </Typography>
+      <a
+        href="https://www.linkedin.com/in/aaron-armour-b7201b25a/"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <img
+          src="/assets/LI-In-Bug.png"
+          alt="LinkedIn logo"
+          className="linked-in-logo contact-logos"
+        />
+      </a>
+      <a
+        href="https://github.com/aaron-armour-hihi-22"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <img
+          src="/assets/github-mark-white.png"
+          alt="github invertocat logo"
+          className="github-logo contact-logos"
+        />
+      </a>
       <Typography variant="h3" id="skills" className="anchor">
         Skills
       </Typography>
